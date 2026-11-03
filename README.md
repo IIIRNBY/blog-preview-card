@@ -17,8 +17,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [--Will appear later--]
+- Live Site URL: [https://iiirnby.github.io/blog-preview-card/]
 
 ## My process
 
@@ -55,5 +55,5 @@ Ultimately: find out how to do without @media and adjust the content so that it 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@IIIRNBY](https://www.frontendmentor.io/profile/yourusername)
+- Website - [https://iiirnby.github.io/blog-preview-card/]
+- Frontend Mentor - [@IIIRNBY]
