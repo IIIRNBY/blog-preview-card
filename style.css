@@ -1,3 +1,9 @@
+:root {
+    --yellow-soft: #f4d04e;
+    --black-soft: #121212;
+    --grey-soft: #6b6b6b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +13,8 @@
 body {
     position: relative;
     font-family: 'Figtree', sans-serif;
-    color: #121212;
-    background: #f4d04e;
+    color: var(--black-soft);
+    background: var(--yellow-soft);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,13 +22,22 @@ body {
     justify-content: center;
 }
 
+main {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 400px) {
     .card {
-        width: 340px;
+        width: 100%;
+        max-width: 340px;
     }
 
     .card-img {
-        width: 300px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -47,8 +62,8 @@ body {
 }
 
 .subtitle {
-    background: #f4d04e;
-    font-size: 16px;
+    background: var(--yellow-soft);
+    font-size: 1rem;
     letter-spacing: -0.2px;
     font-weight: 800;
     padding: 5px 10px;
@@ -57,26 +72,33 @@ body {
 }
 
 .publication {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
     letter-spacing: -0.2px;
 }
 
 .title {
+    font-size: 1.5rem;
     font-weight: 800;
     transition: color 0.3s ease;
 }
 
 .title:hover {
-    color: #f4d04e;
+    color: var(--yellow-soft);
     cursor: pointer;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .title {
+        transition: none;
+    }
+}
+
 .desc {
-    color: #6b6b6b;
-    font-size: 16px;
+    color: var(--grey-soft);
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 .user {
@@ -91,7 +113,7 @@ body {
 }
 
 .user-nickname {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: -0.2px;
     font-weight: 800;
 }
